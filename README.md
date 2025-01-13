@@ -1,14 +1,14 @@
-# Baseline for SpeechWellness-1 Challenge
+# Baseline for the 1st SpeechWellness Challenge
 
-This repository provides the baseline implementation for the SpeechWellness Challenge. Participants can refer to the baseline and associated resources to build and evaluate their models.
+This repository provides the implementation of the baselines for the 1st SpeechWellness Challenge. Participants can refer to the baseline and associated resources to build and evaluate their models.
 
 ## Reference Paper
 
-For more details about the challenge data, baseline method and result, please refer to the paper (arxiv url)
+For more details about the challenge data, baseline methods and results, please refer to the paper (arxiv url)
 
 ## Test Result Submission
 
-To submit test results, organize your predictions in a JSON file formatted as a dictionary with the structure: {id: prediction}. See the ```sample.json``` file in this repository for example.
+To submit test results, please organize your predictions in a JSON file formatted as a dictionary with the structure: {id: prediction}. See the [sample.json](https://github.com/speechwellness/SpeechWellness-1_Baseline/blob/main/sample.json) for example.
 
 ## Code Usage
 
