@@ -4,7 +4,7 @@ This repository provides the implementation of the baselines for the 1st SpeechW
 
 ## Reference Paper
 
-For more details about the challenge data, baseline methods and results, please refer to the paper (arxiv url)
+For more details about the challenge data, baseline methods and results, please refer to the [challenge paper](https://arxiv.org/abs/2501.06474).
 
 ## Test Result Submission
 
@@ -36,7 +36,13 @@ The file structure of this repository is:
 ## Citation
 If you use our dataset, please cite the following paper:
 ```bibtex
-@article{
-...
+@article{wu20251stspeechwellnesschallengedetecting,
+      title={The 1st SpeechWellness Challenge: Detecting Suicidal Risk Among Adolescents}, 
+      author={Wen Wu and Ziyun Cui and Chang Lei and Yinan Duan and Diyang Qu and Ji Wu and Bowen Zhou and Runsen Chen and Chao Zhang},
+      year={2025},
+      eprint={2501.06474},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2501.06474}, 
 }
 ```
