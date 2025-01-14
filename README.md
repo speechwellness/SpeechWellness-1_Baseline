@@ -39,10 +39,7 @@ If you use our dataset, please cite the following paper:
 @article{wu20251stspeechwellnesschallengedetecting,
       title={The 1st SpeechWellness Challenge: Detecting Suicidal Risk Among Adolescents}, 
       author={Wen Wu and Ziyun Cui and Chang Lei and Yinan Duan and Diyang Qu and Ji Wu and Bowen Zhou and Runsen Chen and Chao Zhang},
+      journal={arXiv preprint arXiv:2501.06474},
       year={2025},
-      eprint={2501.06474},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS},
-      url={https://arxiv.org/abs/2501.06474}, 
 }
 ```
