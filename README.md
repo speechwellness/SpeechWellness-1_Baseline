@@ -35,7 +35,7 @@ The file structure of this repository is:
 
 To run the baseline, follow these steps:
 
-1. Reorganize Audio Files: Arrange the audio files bu speech task into the following file structure: audio/{task}/{wav_file}
+1. Reorganize Audio Files: Arrange the audio files by speech task into the following file structure: audio/{task}/{wav_file}
 2. Preprocess: Run ```python preprocess/json_prepare.py``` to generate the JSON files required for training, and ```python preprocess/transcribe.py``` for ASR.
 3. Train: Run ```bash {audio/text/combine}/train.sh``` to start training
 
