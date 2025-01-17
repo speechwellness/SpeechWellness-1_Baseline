@@ -33,6 +33,14 @@ The file structure of this repository is:
 └── requirements.txt            # Dependencies
 ```
 
+To run the baseline, follow these steps:
+
+1. Reorganize Audio Files: Arrange the audio files bu speech task into the following file structure: audio/{task}/{wav_file}
+2. Preprocess: Run ```python preprocess/json_prepare.py``` to generate the JSON files required for training, and ```python preprocess/transcribe.py``` for ASR.
+3. Train: Run ```bash {audio/text/combine}/train.sh``` to start training
+
+Before running the scripts, ensure that you update the file paths in the code to match the local storage paths on your machine.
+
 ## Citation
 If you use our dataset, please cite the following paper:
 ```bibtex
