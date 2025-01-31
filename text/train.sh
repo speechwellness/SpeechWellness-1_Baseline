@@ -17,8 +17,6 @@ do
 
         CUDA_VISIBLE_DEVICES=$cuda \
         python script/text/infer.py $output_dir
-
-        python script/metric_compute.py ${output_dir}/predictions.json
         
     done
 done

@@ -24,8 +24,5 @@ do
         CUDA_VISIBLE_DEVICES=$cuda \
         python script/audio/infer.py $output_dir best
 
-        python script/metric_compute.py ${output_dir}/best_predictions.json
-        
-
     done
 done
