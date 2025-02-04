@@ -1,6 +1,7 @@
 import os
 import json
 import math
+import copy
 
 import torch
 from torch.utils.data import Dataset
@@ -49,25 +50,25 @@ class AudioDataset(Dataset):
                 # if only one window
                 if window_num <= 0:
                     sample["input_values"] = self.feature_extractor(audio, sampling_rate=sr, return_tensors="pt")["input_values"]
-                    self.preprocessed_data.append(sample)
+                    self.preprocessed_data.append(copy.deepcopy(sample))
                     continue
                 # more than one window
                 if self.only_first_window:                
                     end = int(self.window_length_second * 16000)
                     sample["input_values"] = self.feature_extractor(audio[:, :end], sampling_rate=sr, return_tensors="pt")["input_values"]
-                    self.preprocessed_data.append(sample)
+                    self.preprocessed_data.append(copy.deepcopy(sample))
                     continue
                 for i in range(window_num-1):
                     start = int(i * self.step_length_second * 16000)
                     end = int((i * self.step_length_second + self.window_length_second) * 16000)
                     sample["input_values"] = self.feature_extractor(audio[:, start:end], sampling_rate=sr, return_tensors="pt")["input_values"]
-                    self.preprocessed_data.append(sample)
+                    self.preprocessed_data.append(copy.deepcopy(sample))
                 # Last window
                 start = int(window_num * self.step_length_second * 16000)
                 end = audio.shape[1]
                 if (end - start) >= self.step_length_second * 16000:
                     sample["input_values"] = self.feature_extractor(audio[:, start:], sampling_rate=sr, return_tensors="pt")["input_values"]
-                    self.preprocessed_data.append(sample)
+                    self.preprocessed_data.append(copy.deepcopy(sample))
 
 
     def __getitem__(self, index):

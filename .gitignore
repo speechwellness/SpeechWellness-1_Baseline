@@ -1,6 +1,8 @@
 *.ipynb
 test_data.json
-metrics.txt
-submissions/
+metrics*.txt
+submission*
 metric_compute copy.py
 __pycache__/
+potential_issues*
+.DS_Store
