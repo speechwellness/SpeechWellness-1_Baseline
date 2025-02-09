@@ -6,3 +6,4 @@ metric_compute copy.py
 __pycache__/
 potential_issues*
 .DS_Store
+speaker.py

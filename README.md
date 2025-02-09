@@ -2,7 +2,13 @@
 
 This repository provides the implementation of the baselines for the 1st SpeechWellness Challenge. Participants can refer to the baseline and associated resources to build and evaluate their models.
 
-## Reference Paper
+## Baseline Result and Reference Paper
+
+The baseline achieves an accuracy of 0.61 on the test set using wav2vec 2.0 + BERT, with the confusion matrix: 
+|               | Predicted: No Risk | Predicted: At Risk |
+|---------------|--------------------|--------------------|
+| Actual: No Risk |  31               |  19               |
+| Actual: At Risk |  20                |  30              |
 
 For more details about the challenge data, baseline methods and results, please refer to the [challenge paper](https://arxiv.org/abs/2501.06474).
 
