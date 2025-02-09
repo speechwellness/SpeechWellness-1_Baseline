@@ -9,7 +9,6 @@ The baseline achieves an accuracy of 0.61 on the test set using wav2vec 2.0 + BE
 |---------------|--------------------|--------------------|
 | Actual: No Risk |  31               |  19               |
 | Actual: At Risk |  20                |  30              |
-
 For more details about the challenge data, baseline methods and results, please refer to the [challenge paper](https://arxiv.org/abs/2501.06474).
 
 ## Test Result Submission
